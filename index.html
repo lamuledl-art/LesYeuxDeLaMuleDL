@@ -1,0 +1,8 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panneaux en direct</title><style>*{box-sizing:border-box}body{max-width:880px;margin:auto;padding:1rem;font:16px system-ui;background:#142329;color:#f5f8f7}button,input,select{font:inherit;margin:.25rem;padding:.45rem}section{position:relative}video,img{display:block;width:100%;height:auto}canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}[hidden]{display:none}label{display:inline-block}</style>
+<h1>Panneaux en direct</h1><p id="status" role="status">Chargement des deux modèles…</p>
+<button id="cam" disabled>Caméra</button><button id="stop" disabled>Arrêter</button>
+<label>Photo <input id="file" type="file" accept="image/*" disabled></label>
+<label>Analyses/s <select id="rate"><option>1</option><option selected>3</option><option>5</option></select></label>
+<section><video muted playsinline hidden></video><img hidden alt="Photo choisie"><canvas hidden></canvas></section>
+<p id="stats"></p><script src="app.js"></script></html>
